@@ -23,4 +23,4 @@ TODO
 
 由贡献者编写部分的许可遵循[MIT LICENSE](LICENSE)；
 
-其他部分的版权归属于其各自的作者，如有侵权，请及时联系<a3318114536@163.com>。
+其他部分的版权归属于其各自的作者，如有侵权，请及时联系<easytothink@mail.nwpu.edu.cn>。
