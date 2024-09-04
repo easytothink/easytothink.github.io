@@ -11,13 +11,14 @@
 1. 按<kbd>win</kbd>+<kbd>R</kbd>进入终端窗口
 
 2. 输入以下代码  
-    'git clone https://github.com/easytothink/easytothink.github.io.git'
-    'cd easytothink.github.io'
+    `git clone https://github.com/easytothink/easytothink.github.io.git`  
+    `cd easytothink.github.io`
 
 3. TODO
 
 ## 如何提问
-TODO
+
+1. 点
 
 ## 版权所有
 
