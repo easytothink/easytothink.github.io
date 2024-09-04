@@ -1,1 +1,0 @@
-# easytothink.github.io
