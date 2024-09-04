@@ -2,41 +2,46 @@ import os
 
 def create_index_html(root_dir='.'):  
     # 准备HTML模板  
-    html_content = """  
-    <!DOCTYPE html>  
-    <html>  
-    <head>  
-        <title>Index of {}</title>  
-    </head>  
-    <body>  
-        <h1>Index of {}</h1>  
-        <ul>  
-    """.format(root_dir, root_dir) 
+    html_content = ""
 
     # 遍历目录树  
     for dirpath, dirnames, filenames in os.walk(root_dir):  
         # 遍历当前目录下的文件  
-        for filename in filenames:  
-            # 排除隐藏文件（以'.'开头的文件）  
+        for filename in filenames:
             if '.pdf' in filename:  
                 # 生成HTML超链接，注意处理路径中的特殊字符  
-                relative_path = os.path.relpath(os.path.join(dirpath, filename), root_dir)  
-                # 使用urllib.parse.quote对路径进行编码，以避免特殊字符问题（可选）  
-                # 但在这里为了简单起见，我们假设路径不包含需要编码的字符                        
+                relative_path = os.path.relpath(os.path.join(root_dir, dirpath, filename), root_dir)                      
                 html_content += f"<li><a href=\"js/pdf/web/viewer.html?file=/src/subjects/{relative_path}\">{filename}</a></li>\n"
             elif '.py' not in filename:
-                relative_path = os.path.relpath(os.path.join(dirpath, filename), root_dir)
+                relative_path = os.path.relpath(os.path.join(root_dir, dirpath, filename), root_dir)
                 html_content += f"<li><a href=\"./src/subjects/{relative_path}\">{filename}</a></li>\n"
-                                                    # 结束HTML模板  
-    html_content+= """
-        </ul>
-    </body>  
-    </html>                                         """
-                                                    # 写入index.html文件
-    with open('resources.html', 'w') as f:
-        f.write(html_content)
-
-    print("resources.html has been created successfully.")
+    
+    return html_content
 
 if __name__ == "__main__":  
-    create_index_html()
+    # 准备HTML模板                              
+    html_content = """                              <!DOCTYPE html>                                 <html>                                          <head>                                              <title>学习资料</title>                     </head>
+        <body>"""
+
+    directory_path = os.getcwd()
+    dirnames=[]
+
+    # 列出目录下的所有文件和文件夹  
+    for item in os.listdir(directory_path):  
+        # 拼接完整路径  
+        full_path = os.path.join(directory_path, item)  
+        # 判断是否为目录  
+        if os.path.isdir(full_path):  
+            dirnames.append(item)
+
+    for dirname in dirnames:
+        print(dirname)
+        html_content+=f"<p>{dirname}</p>\n"
+        html_content+=create_index_html(dirname)
+
+    # 结束HTML模板                          
+    html_content+= """                                  </ul>                                       </body>                                         </html>                                         """
+
+    with open("resources.html","w") as f:
+        f.write(html_content)
+        f.close()
