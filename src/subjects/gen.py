@@ -5,9 +5,10 @@ def create_index_html(root_dir='.'):
     html_content = ""
 
     # 遍历目录树  
-    for dirpath, dirnames, filenames in os.walk(root_dir):  
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        dirnames.sort()
         # 遍历当前目录下的文件  
-        for filename in filenames:
+        for filename in sorted(filenames):
             if '.pdf' in filename:  
                 # 生成HTML超链接，注意处理路径中的特殊字符  
                 relative_path = os.path.relpath(os.path.join(root_dir, dirpath, filename), root_dir)                      
@@ -16,6 +17,7 @@ def create_index_html(root_dir='.'):
                 relative_path = os.path.relpath(os.path.join(root_dir, dirpath, filename), root_dir)
                 html_content += f"<li><a href=\"./src/subjects/{relative_path}\">{filename}</a></li>\n"
     
+    #print(html_content)
     return html_content
 
 if __name__ == "__main__":  
