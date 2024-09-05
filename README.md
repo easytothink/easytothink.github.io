@@ -5,16 +5,17 @@
 
 ## 如何贡献
 
+方法一. 发邮件至<easytothink@mail.nwpu.edu.cn>，我会将资料进行整理。
+
+方法二. 
+
 *以下所有步骤均基于Windows系统*
+*需要有Github账号*
 *需要提前安装git与python*
 
 1. 按<kbd>win</kbd>+<kbd>R</kbd>进入终端窗口
 
-2. 输入以下代码  
-    `git clone https://github.com/easytothink/easytothink.github.io.git`  
-    `cd easytothink.github.io`
-
-3. TODO
+2. 输入以下
 
 ## 如何提问
 
