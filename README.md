@@ -1,7 +1,7 @@
 # 欢迎来到nwpu-me-kindergarden
 
 ## 项目创立初衷
-无意中刷到了[这个项目](https://github.com/LecterChu/nwpu-cram)，遂震惊。怀着好奇的心理，我加入了[官方QQ频道](https://pd.qq.com/s/h3e4grc17)，值得一提的是，这里有非常多资源与链接。但某盘的下载速度实在是令人伤心。为了让更多的人方便使用资源，故建立此Github Pages。
+受[这个项目](https://github.com/LecterChu/nwpu-cram)与[官方QQ频道](https://pd.qq.com/s/h3e4grc17)的启发。为了让更多的人方便使用资源（主要是某盘的下载速度实在是太伤心了），故建立此Github Pages。
 
 ## 如何贡献
 
@@ -23,7 +23,7 @@
 2. 点击绿色按钮`New`
 3. 提出你的问题
 
-PS.提问之前请先阅读[提问的艺术](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E5%88%AB%E8%A6%81%E6%B1%82%E4%BD%BF%E7%94%A8%E7%A7%81%E4%BA%BA%E7%94%B5%E9%82%AE%E5%9B%9E%E5%A4%8D)，以便问题能够更好更快被解决
+PS.提问之前请先阅读[提问的艺术](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)，以便问题能够更好更快被解决
 
 ## 版权所有
 
