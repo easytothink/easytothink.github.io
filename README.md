@@ -1,7 +1,7 @@
 # 欢迎来到nwpu-me-kindergarden
 
 ## 项目创立初衷
-无意中刷到了[这个项目](https://github.com/LecterChu/nwpu-cram)，遂震惊。为了让更多的人方便使用资源，故建立此Github Pages。
+无意中刷到了[这个项目](https://github.com/LecterChu/nwpu-cram)，遂震惊。怀着好奇的心理，我加入了[官方QQ频道](https://pd.qq.com/s/h3e4grc17)，值得一提的是，这里有非常多资源与链接。但某盘的下载速度实在是令人伤心。为了让更多的人方便使用资源，故建立此Github Pages。
 
 ## 如何贡献
 
