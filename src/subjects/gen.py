@@ -22,8 +22,14 @@ def create_index_html(root_dir='.'):
 
 if __name__ == "__main__":  
     # 准备HTML模板                              
-    html_content = """                              <!DOCTYPE html>                                 <html>                                          <head>                                              <title>学习资料</title>                     </head>
-        <body>"""
+    html_content = """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>学习资料</title>
+        </head>
+    <body>"""
 
     directory_path = os.getcwd()
     dirnames=[]
@@ -42,7 +48,10 @@ if __name__ == "__main__":
         html_content+=create_index_html(dirname)
 
     # 结束HTML模板                          
-    html_content+= """                                  </ul>                                       </body>                                         </html>                                         """
+    html_content+= """
+        </ul>
+    </body>
+    </html>"""
 
     with open("resources.html","w") as f:
         f.write(html_content)
