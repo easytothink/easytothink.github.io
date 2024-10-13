@@ -11,7 +11,7 @@ def create_index_html(root_dir='.'):
         for filename in sorted(filenames):
             if '.pdf' in filename:  
                 # 生成HTML超链接，注意处理路径中的特殊字符  
-                relative_path = os.path.relpath(os.path.join(root_dir, dirpath, filename), root_dir)                      
+                relative_path = os.path.relpath(os.path.join(root_dir, dirpath, filename), root_dir)
                 html_content += f"<li><a href=\"js/pdf/web/viewer.html?file=/src/subjects/{relative_path}\">{filename}</a></li>\n"
             elif '.py' not in filename:
                 relative_path = os.path.relpath(os.path.join(root_dir, dirpath, filename), root_dir)
@@ -53,6 +53,6 @@ if __name__ == "__main__":
     </body>
     </html>"""
 
-    with open("resources.html","w") as f:
+    with open("resources.html","w",encoding='utf-8') as f:
         f.write(html_content)
         f.close()
